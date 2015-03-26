@@ -9,7 +9,7 @@ import scala.concurrent.Await
 import scala.language.postfixOps
 
 
-class SfileTest  extends Specification {
+class SfileTest extends Specification {
   sequential
 
   val timeout = Duration(1000, MILLISECONDS)
@@ -43,14 +43,14 @@ class SfileTest  extends Specification {
       res match {
         case
           Folder(`rootDir`, _, List(
-            Folder(`a1Dir`, _, List(
-              Folder(`b1Dir`, _, List(
-                File(`c1File`, _)
-              )),
-              File(`b1File`, _)
-            )),
-            File(`a1File`, _),
-            Folder(`a2Dir`, _, Nil)
+          Folder(`a1Dir`, _, List(
+          Folder(`b1Dir`, _, List(
+          File(`c1File`, _)
+          )),
+          File(`b1File`, _)
+          )),
+          File(`a1File`, _),
+          Folder(`a2Dir`, _, Nil)
           )
           ) => success
         case x => failure(s"$x has unexpected structure")
