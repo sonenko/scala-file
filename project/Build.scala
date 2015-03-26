@@ -1,4 +1,6 @@
 import sbt._, Keys._
+import sbtrelease.{Version, ReleasePlugin}
+import sbtrelease.ReleasePlugin._
 
 import Dependencies._
 
@@ -9,7 +11,7 @@ object Build extends Build {
     publishArtifact in (Compile, packageDoc) := false,
     publishArtifact in (Compile, packageSrc) := true,
     credentials += Credentials(Path.userHome / ".ivy2" / ".credentials")
-  )
+  ) ++ releaseSettings
 
   val commonSettings = Seq(
     organization := "com.github.sonenko",
