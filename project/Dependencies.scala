@@ -18,4 +18,7 @@ object Dependencies {
     val mockito = lib("mock")
     val specs2 = lib("core")
   }
+
+  val scalaz = "org.scalaz" %% "scalaz-core" % "7.1.0"
+  val shapeless = "com.chuusai" %%  "shapeless" % "2.1.0"
 }

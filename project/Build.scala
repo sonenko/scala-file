@@ -25,7 +25,8 @@ object Build extends Build {
   lazy val sfile = (project in file("."))
     .settings(libraryDependencies ++= Seq(
       log.logback, log.scalaloggingSlf4j, log.jclOverSlf4j, log.julToSlf4j, log.log4jOverSlf4j, log.slf4jApi,
-      tests.specs2, tests.mockito
+      tests.specs2, tests.mockito,
+      scalaz, shapeless
     ))
     .settings(commonSettings:_*)
 }
