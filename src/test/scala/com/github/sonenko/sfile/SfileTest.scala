@@ -1,8 +1,5 @@
 package com.github.sonenko.sfile
 
-import java.io.FileNotFoundException
-import java.nio.file.FileAlreadyExistsException
-
 import org.specs2.mutable.Specification
 import scala.concurrent.duration._
 import scala.concurrent.Await
@@ -128,55 +125,4 @@ class SfileTest extends Specification {
       isFileExists(folder1) must beFalse
     }
   }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
