@@ -1,2 +1,2 @@
 ## about
-Project for files / folders manipulation using scala. Basically created for file manage using Spray
+Project for files / folders manipulation using scala using bash like commands(mkdir, rm -rf etc...). Basically created for files management using Spray
